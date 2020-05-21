@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/jesseDijkman1/test_game/issues"
   },
-  "homepage": "https://github.com/jesseDijkman1/test_game#readme"
+  "homepage": "https://github.com/jesseDijkman1/test_game#readme",
+  "devDependencies": {
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  }
 }
