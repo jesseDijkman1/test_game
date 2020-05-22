@@ -7,6 +7,14 @@ export function updateCanvas() {
 }
 updateCanvas()
 
-export function clearCanvas() {
-  ctx.clearRect(0, 0, canvas.width, canvas.height)
+export function clearCanvas(colorOverlay) {
+  if (!colorOverlay) {
+    ctx.clearRect(0, 0, canvas.width, canvas.height)
+  } else {
+    ctx.beginPath()
+    ctx.fillStyle = colorOverlay
+    ctx.rect(0, 0, canvas.width, canvas.height)
+    ctx.fill()
+    ctx.closePath()
+  }
 }
