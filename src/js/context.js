@@ -18,3 +18,12 @@ export function clearCanvas(colorOverlay) {
     ctx.closePath()
   }
 }
+
+export function isOutsideView(x, y, margin) {
+  return (
+    x > canvas.width - margin ||
+    x < 0 + margin ||
+    y > canvas.height - margin ||
+    y < 0 + margin
+  )
+}
